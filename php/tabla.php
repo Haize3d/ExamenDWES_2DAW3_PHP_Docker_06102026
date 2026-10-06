@@ -145,6 +145,14 @@
                                 echo "Profesión: ". $row["profesion"] . "<br/>";
                                 echo "¿Jornada parcial?: ". $row["jornadaParcial"] . "<br/>";
                                 echo "Idiomas: ". $row["idiomas"] . "<br/>";*/
+
+                                if($row["jornadaParcial"] == 1)
+                                {
+                                    $textoJornada = "Parcial";
+                                }else
+                                {
+                                    $textoJornada = "Completa";
+                                }
                                 /*El contenido de las columnas*/
                                 echo '<tr>
                                     <td>'.$row["id"].'</td>
@@ -155,7 +163,7 @@
                                     <td>'.$row["tlf"].'</td>
                                     <td>'.$row["email"].'</td>
                                     <td>'.$row["profesion"].'</td>
-                                    <td>'.$row["jornadaParcial"].'</td>
+                                    <td>'.$textoJornada.'</td>
                                     <td>'.$row["idiomas"].'</td>
                                 </tr>';
                             }
