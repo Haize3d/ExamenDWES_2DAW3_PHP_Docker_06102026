@@ -103,3 +103,11 @@ tr:nth-child(even) {
 tr:nth-child(odd) { 
     background-color: white; 
 } 
+
+div{
+    display: flex;
+    gap: 30px;
+}
+span{
+    display: flex;
+}

@@ -1,1 +1,19 @@
 // Copia aquí todos los comandos que has usado para crear la base de datos.
+
+(meterse en SQL)
+CREATE DATABASE CAE;
+
+(meterse en CAE y de nuevo en SQL)
+CREATE TABLE SOLICITUD(id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+                       nombre VARCHAR(30) NOT NULL,
+                       apellidos VARCHAR(70) NOT NULL,
+                       dni VARCHAR(9) NOT NULL,
+                       f_nac DATE NOT NULL,
+                       tlf VARCHAR(9) NOT NULL,
+                       email VARCHAR(30) NOT NULL,
+                       profesion INT,
+                       jornadaParcial INT NOT NULL,
+                       idiomas VARCHAR(255));
+
+ALTER TABLE solicitud MODIFY profesion VARCHAR(255);
+

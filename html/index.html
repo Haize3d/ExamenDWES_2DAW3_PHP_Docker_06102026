@@ -1,5 +1,6 @@
 <html>
     <head>
+        <meta charset="UTF-8"/>
         <title>Examen de Desarrollo web en entorno servidor</title>
         <link rel="stylesheet" type="text/css" href="../estilos/estilos.css">
         <link rel="icon" type="image/png" sizes="32x32" href="../imagenes/favicon.jpeg">
@@ -10,8 +11,58 @@
         <button onclick="location.href='../php/tabla.php?tipo=soldadura'">Soldadura</button>
         <button onclick="location.href='../php/tabla.php?tipo=informatica'">Informática</button>
         <button onclick="location.href='../php/tabla.php?tipo=socio'">Asistencia Sociosanitaria</button>
-        <form action="../php/tabla.php" method="???">
+        <form action="../php/tabla.php" method="POST">
             <!-- Añade aquí todos los datos que te pido en el enunciado -->
+            <label>Nombre</label>
+            <input type="string" id="nombre" name="nombre"/>
+            <label>Apellidos</label>
+            <input type="string" id="apellidos" name="apellidos"/>
+            <label>DNI</label>
+            <input type="string" id="dni" name="dni"/>
+            <label>Fecha de nacimiento</label>
+            <input type="date" id="f_na" name="f_na"/>
+            <label>Teléfono</label>
+            <input type="string" id="tlf" name="tlf"/>
+            <label>E-mail</label>
+            <input type="email" id="email" name="email"/>
+            <label>Profesiones aprendidas</label>
+            <div>
+                <span>
+                    <input type="checkbox" id="soldadura" name="soldadura"/>
+                    <label>Soldadura</label>
+                </span>
+                <span>
+                    <input type="checkbox" id="informatica" name="informatica"/>
+                    <label>Informática</label>
+                </span>
+                <span>
+                    <input type="checkbox" id="asistencia" name="asistencia"/>
+                    <label>Asistencia_sociosanitaria</label>
+                </span>
+            </div>
+            <label>Jornada laboral deseada</label>
+            <div>
+                <span>
+                    <input type="radio" id="jornada" name="1"/>
+                    <label>Parcial</label><br/>
+                </span>
+                <span>
+                    <input type="radio" id="jornada" name="0"/>
+                    <label>Completa</label><br/>
+                </span>
+            </div>
+            <label>Idiomas</label>
+            <div>
+                <span>
+                    <input type="checkbox" id="euskera" name="euskera"/>
+                    <label>Euskera</label><br/>
+                </span>
+                <span>
+                    <input type="checkbox" id="ingles" name="ingles"/>
+                    <label>Inglés</label>
+                </span>
+            </div>
+            <input type="submit" value="Inscribir" id="inscribir" name="inscribir"/>
         <form>
     </body>
 </html>
