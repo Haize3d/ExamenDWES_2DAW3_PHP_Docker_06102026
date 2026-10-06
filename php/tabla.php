@@ -67,13 +67,9 @@
                     $profesion = $profesion . ",Asistencia Sociosanitaria";
                 }
             }
-            if(isset($_POST["0"]))
-            {
-                $jornadaParcial = "0"; //si jornadaParcial es 0, la jornada NO es parcial, así que es completa
-            }else
-            {
-                $jornadaParcial = "1"; //si jornadaParcial es 1, la jornada ES parcial
-            }
+
+            $jornadaParcial = $_POST["jornada"];
+
             $idiomas = null;
             if(isset($_POST["euskera"])) //hago lo mismo que con las profesiones para guardarlo como un array
             {
