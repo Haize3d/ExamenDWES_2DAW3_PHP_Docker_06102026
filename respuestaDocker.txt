@@ -1,4 +1,30 @@
 // Responde a la pregunta sobre docker del enunciado
+docker - Es el comando base para ejecutar cualquier sentencia que funcione en base a docker. A veces, cuando no funciona, poner “sudo” delante del comando puede hacerlo funcionar.
+Fuente: (1)
 
+run - Pone a funcionar el contenedor, que tiene su propio sistema de archivos, red y árbol de procesos.
+Fuente: (2)
+
+-d - Hace que la sentencia se ejecute en segundo plano. Viene de --detach.
+Fuente: (3)
+
+--name (mi web) - Sirve para darle un nombre al contenedor. Después, ese nombre puede ser utilizado para llamar al contenedor. (mi_web sería el nombre que se le ha dado al contenedor en este ejemplo).
+Fuente: (4)
+
+-p (8080:80) - Une un puerto del contenedor para que este pueda comunicarse con el exterior o con otros contenedores. Viene de –publish. (8080:80 significa que el puerto 80 del contenedor da al puerto 8080 del anfitrión).
+Fuente: (5), (6)
+
+nginx - Es una “imagen” que sirve para hacer funcionar los protocolos HTTP, HTTPS, SMTP, POP3 e IMAP. Una imagen es un paquete estándar en el que se encuentran todos los archivos, archivos binarios, librerías y configuraciones necesarias para que un contenedor funcione. Los archivos binarios son archivos que el ordenador puede leer, pero no están  compuestos de texto.
+Fuente: (7), (8), (9), (10)
 
 // Bibiografía
+1.- https://docs.docker.com/reference/cli/docker/
+2.- https://docs.docker.com/engine/containers/run/
+3.- https://docs.docker.com/reference/cli/docker/container/run/#detach
+4.- https://docs.docker.com/reference/cli/docker/container/run/#name
+5.- https://docs.docker.com/engine/network/#published-ports
+6.- https://docs.docker.com/engine/network/port-publishing/
+7.- https://hub.docker.com/_/nginx/
+8.- https://docs.docker.com/get-started/docker-concepts/the-basics/what-is-an-image/
+9.- https://softwareengineering.stackexchange.com/questions/121224/what-are-binaries
+10.- https://en.wikipedia.org/wiki/Binary_file

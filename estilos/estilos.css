@@ -104,6 +104,8 @@ tr:nth-child(odd) {
     background-color: white; 
 } 
 
+/*He realizado estos cambios en el CSS para que los radio buttons y los checkboxs se mostraran en una sola línea
+porque eran demasiado grandes para el formulario*/
 div{
     display: flex;
     gap: 30px;
